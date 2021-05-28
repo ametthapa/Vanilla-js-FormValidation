@@ -1,4 +1,4 @@
-# Vanilla projects
+# Vanilla Javascript projects
 
 javascript projects with number starting from 1 to .... still continuing
 

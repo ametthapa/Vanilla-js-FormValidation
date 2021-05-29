@@ -32,7 +32,7 @@ function checkPassword(input){
     if(re.test(input.value)){
         showSuccess(input);
     }else{
-        showError(input,'contain at least a number, lowercase & uppercase character');
+        showError(input,' contain a number, lowercase & uppercase character');
     }
 }
 

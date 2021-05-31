@@ -95,4 +95,12 @@ h2{
     width: 100%;
 }
 
+#icon{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+    font-size: 17px;
+    cursor: pointer;
+}
+
 

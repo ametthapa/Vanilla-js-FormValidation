@@ -3,6 +3,36 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+var show =false;
+
+
+function toggleP(){
+    if(show === true){
+        document.getElementById('password2').type='password';
+        document.getElementById('icon').className='fas fa-eye'
+        show = false;
+    } else {
+        document.getElementById('password2').type='text';
+        document.getElementById('icon').className='fas fa-eye-slash'
+        show = true;
+    }
+
+}
+
+
+// SHow and hide password through icon and toggle
+function toggle(){
+    if(show === true){
+        document.getElementById('password').type='password';
+        document.getElementById('icon').className='fas fa-eye'
+        show = false;
+    } else {
+        document.getElementById('password').type='text';
+        document.getElementById('icon').className='fas fa-eye-slash'
+        show = true;
+    }
+
+}
 
 //show input error message
 function showError(input, message){

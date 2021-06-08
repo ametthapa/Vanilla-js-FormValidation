@@ -8,12 +8,14 @@ var show =false;
 
 function toggleP(){
     if(show === true){
+        console.log('before');
         document.getElementById('password2').type='password';
-        document.getElementById('icon').className='fas fa-eye'
+        document.getElementById('icon2').className='fas fa-eye icon'
         show = false;
     } else {
+        console.log('after');
         document.getElementById('password2').type='text';
-        document.getElementById('icon').className='fas fa-eye-slash'
+        document.getElementById('icon2').className='fas fa-eye-slash icon'
         show = true;
     }
 
@@ -23,12 +25,15 @@ function toggleP(){
 // SHow and hide password through icon and toggle
 function toggle(){
     if(show === true){
+        console.log('before1'); 
         document.getElementById('password').type='password';
-        document.getElementById('icon').className='fas fa-eye'
+        document.getElementById('icon').className='fas fa-eye icon'
         show = false;
     } else {
+        console.log('after1');
+
         document.getElementById('password').type='text';
-        document.getElementById('icon').className='fas fa-eye-slash'
+        document.getElementById('icon').className='fas fa-eye-slash icon'
         show = true;
     }
 
@@ -58,7 +63,7 @@ function checkEmail(input){
     }
 }
 function checkPassword(input){
-    const re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+    const re = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
     if(re.test(input.value)){
         showSuccess(input);
     }else{
